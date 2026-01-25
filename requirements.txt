@@ -1,0 +1,22 @@
+# Lead-Lag Effect Analysis - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Data processing
+polars>=0.20.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+
+# Numerical computation
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Statistical analysis
+statsmodels>=0.14.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Jupyter environment
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
