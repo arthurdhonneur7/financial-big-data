@@ -18,6 +18,8 @@
 **Course:** Financial Big Data  
 **Date:** January 2026
 
+
+Find our data here: https://drive.google.com/drive/folders/1Eu32ih7lX4exZTNjQxeG4utqp4BFdSh1?usp=drive_link
 ---
 
 ## Abstract
