@@ -68,15 +68,37 @@ Financial Big Data/
 │   ├── cleaning_data.ipynb      # Data preprocessing and cleaning pipeline
 │   └── main_project.ipynb       # Main analysis notebook
 ├── data/
-│   ├── AAPL.OQ.zip              # Raw data archive
 │   ├── clean/
-│   │   ├── merged_1min.parquet          # Minute-level merged trade data
-│   │   ├── merged_1sec.parquet          # Second-level merged trade data
-│   │   └── merged_BBO_1min.parquet      # Minute-level BBO data
-│   └── data_test/               # Sample data for testing
-│       ├── 2009-01-02-AAPL.OQ-trade.parquet
-│       ├── 2009-01-02-SPY.P-trade.parquet
-│       └── ...
+│   │   ├── merged/
+│   │   │   ├── merged_1min.parquet                # Minute-level merged trade data
+│   │   │   ├── merged_1sec.parquet                # Second-level merged trade data
+│   │   │   ├── merged_BBO_1min.parquet            # Minute-level merged BBO data
+│   │   │   ├── merged_BBO_1sec.parquet            # Second-level merged BBO data
+│   │   │   ├── merged_BBO_1min_4assets.parquet    # Minute-level merged BBO data (4 assets)
+│   │   │   └── merged_BBO_1sec_4assets.parquet    # Second-level merged BBO data (4 assets)
+│   │   └── US/
+│   │       ├── trade/
+│   │       │   ├── trade_AAPL.parquet              # Cleaned trade data (AAPL)
+│   │       │   └── trade_SPY.parquet               # Cleaned trade data (SPY)
+│   │       └── BBO/
+│   │           ├── BBO_AAPL_1.parquet
+│   │           ├── BBO_AAPL.parquet
+│   │           ├── BBO_AMZN.parquet
+│   │           ├── BBO_GOOGL.parquet
+│   │           ├── BBO_MSFT.parquet
+│   │           └── BBO_SPY.parquet
+│   └── raw/
+│       ├── FR/
+│       └── US/
+│           ├── trade/
+│           │   ├── AAPL.OQ/
+│           │   └── SPY.P/
+│           └── BBO/
+│               ├── AAPL.OQ/
+│               ├── AMZN.OQ/
+│               ├── GOOGL.OQ/
+│               ├── MSFT.OQ/
+│               └── SPY.P/
 ├── plots/                       # Generated figures
 │   ├── fig_acf_AAPL.png
 │   ├── fig_acf_SPY.png
